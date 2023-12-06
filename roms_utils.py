@@ -60,7 +60,6 @@ def set_depth(Vtransform, Vstretching, theta_s, theta_b, hc, N, igrid, h, zeta=N
     L, M = Lp - 1, Mp - 1
 
     # Compute vertical stretching function, C(k)
-    # Note: You need to implement or import the `stretching` function that is used here.
     s, C = stretching(Vstretching, theta_s, theta_b, hc, N, igrid == 5, report)
 
     # Average bathymetry and free-surface at requested C-grid type
